@@ -14,9 +14,9 @@ def countNumber(x):
     print('Количество цифр в числе: ', count)
     return count
 
+
 def difference(summa, count):
     print('разница суммы от количества чисел равна: ', summa, '-', count, '=', summa - count)
-
 
 
 x = int(input('Введите число: '))
@@ -25,4 +25,3 @@ x = int(input('Введите число: '))
 summa = summ(x)
 count = countNumber(x)
 difference(summa, count)
-

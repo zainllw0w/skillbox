@@ -1,3 +1,4 @@
+
 count = 0
 
 start = int(input('Введите начало года: '))
