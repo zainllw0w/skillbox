@@ -3,7 +3,7 @@ sequence = ''
 n = int(input('Введите количество чисел: '))
 
 for _ in range(n):
-    num = int(input('Введите число: '))
+    num = int(input('Число: '))
     my_list.append(num)
     sequence += str(num)
 
