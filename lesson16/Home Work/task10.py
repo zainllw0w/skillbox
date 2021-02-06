@@ -1,4 +1,5 @@
 my_list = []
+new_list = []
 sequence = ''
 n = int(input('Введите количество чисел: '))
 
@@ -9,12 +10,18 @@ for _ in range(n):
 
 print('\nПоследовательность: ', sequence)
 
-if my_list[-1] == my_list[-2]:
-    print('Нужно дописать чисел: ', n - 2)
-    for i in range(len(my_list) - 3, -1, -1):
-        print('Сами числа: ', my_list[i])
-else:
-    print('Нужно дописать чисел: ', n - 1)
-    for i in range(len(my_list) - 2, -1, -1):
-        print('Сами числа: ', my_list[i], end='')
+for a in range(len(my_list)):
+    for b in range(a, len(my_list)):
+        new_list.append(my_list[b])
+    if new_list[::-1] == new_list:
+        new_list = []
+        for c in range(a):
+            new_list.append(my_list[c])
+        new_list.reverse()
+        break
+    new_list = []
+print('Нужно добавить ', len(new_list), 'чисел')
+print('Сами числа: ', end='')
+for i in new_list:
+    print(i, end='')
 
