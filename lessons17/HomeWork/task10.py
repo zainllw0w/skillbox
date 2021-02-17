@@ -15,4 +15,4 @@ for i in rev:
     result += i
 
 print('Слово которое должны зашифровать: ', text)
-print('Зашифрованое слово: ', result )
+print('Зашифрованое слово: ', result)
