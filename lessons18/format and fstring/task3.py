@@ -7,5 +7,7 @@ for i in range(4):
         else:
             break
     ip_list.append(number)
-ip = '{0}.{1}.{2}.{3}'.format(ip_list[0], ip_list[1], ip_list[2], ip_list[3])
+
+ip = f'{ip_list[0]}.{ip_list[1]}.{ip_list[2]}.{ip_list[3]}'
+
 print(ip)
