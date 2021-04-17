@@ -14,14 +14,8 @@ city = input('Введите город: ')
 #     if city in value:
 #         print(key)
 #         break
-<<<<<<< HEAD
 
-for i in country:
-    if city in country.get(i):
-        print('Город', city, 'расположен в', i)
-        break
 
-=======
 is_exist = True
 for i in country:
     if city in country.get(i):
@@ -29,8 +23,9 @@ for i in country:
         is_exist = False
         break
 
+
 if is_exist:
     print('По городу', city, 'данных нет!')
 
->>>>>>> 9125453 (сделано задание 2 (с 3мя вариантами вывода))
+
 # print({i for i in country if city in country.get(i)})
