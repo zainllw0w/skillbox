@@ -1,4 +1,5 @@
 country = dict()
+
 n = int(input('Введите количество стран: '))
 
 for i in range(1, n+1):
