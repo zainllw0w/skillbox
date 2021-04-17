@@ -27,5 +27,4 @@ for i in country:
 if is_exist:
     print('По городу', city, 'данных нет!')
 
-
 # print({i for i in country if city in country.get(i)})
