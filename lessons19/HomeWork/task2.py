@@ -15,7 +15,6 @@ city = input('Введите город: ')
 #         print(key)
 #         break
 
-
 is_exist = True
 for i in country:
     if city in country.get(i):
