@@ -53,6 +53,11 @@ print(data['ETH'])
 print(data['tokens'][0]['fst_token_info']['name'])
 data['tokens'][0]['fst_token_info']['name'] = 'другое имя'
 print(data['tokens'][0]['fst_token_info']['name'])
-dell = data['tokens'][0]['total_out'].pop()
-print(dell)
+print(data['tokens'][0]['total_out'])
+dell = data['tokens'][0].pop('total_out')
+data['ETH']['totalOut'] = dell
+total_price =  data.get('tokens')[1].get('sec_token_info').pop('price')
+data.get('tokens')[1].get('sec_token_info')['total_price'] = total_price
+print(data.get('tokens')[1])
+
 
