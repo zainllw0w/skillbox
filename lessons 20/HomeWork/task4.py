@@ -10,7 +10,6 @@ for key, value in players.items():
     new_list = list()
     new_list += [x for x in key]
     new_list += [x for x in value]
-    new_list = tuple(new_list)
-    itog.append(new_list)
+    itog.append(tuple(new_list))
 print(itog)
 
