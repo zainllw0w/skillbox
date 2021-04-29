@@ -7,6 +7,8 @@ def finder(path):
             print('это файл!')
             size = os.path.getsize(path)
             print(f'размер файла: {size}')
+    else:
+        print('Указаного пути не существует!')
 
 
 path = os.path.abspath(os.path.join('/', 'games', 'steam', 'steam.exe'))
